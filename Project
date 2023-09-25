@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class quiz{
+public static void main(String args[]){
+Scanner scan=new Scanner(System.in);
+String[] answers={"c", "a", "b"};
+String[] responses={"", "", ""};
+System.out.println("what is 2+2?");
+System.out.println("a) two");
+System.out.println("b) three");
+System.out.println("c) four");
+System.out.println("d) five");
+System.out.println("what is the capital  of north carolina?");
+System.out.println("a) Raleigh");
+System.out.println("b) Durham");
+System.out.println("c) Winston-Salem");
+System.out.println("what is the fastest land animal?");
+System.out.println("a) Tiger");
+System.out.println("b) cheetah");
+System.out.println("c) Girafee");
+System.out.println("d) Wolf");
+responses[0]=scan.next();
+responses[1]=scan.next();
+responses[2]=scan.next();
+int score=0;
+for(int i=0;i<3;i++){
+if(responses[i].equalsIgnoreCase(answers[i])){
+score++;
+}
+}
+System.out.println("score: "+score +"\3");
+}
+}
